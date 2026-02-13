@@ -1,0 +1,13 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+{% for employee in Employee %}
+    <p>{{ employee.name }}</p>
+{% endfor %}
+
+</body>
+</html>
